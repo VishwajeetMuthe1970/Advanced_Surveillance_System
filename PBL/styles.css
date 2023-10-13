@@ -1,0 +1,278 @@
+/*          navbar           */
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+#nav{
+    justify-content: right;
+    background-color: #0802A3;
+    display: flex;
+    padding: 25px;
+    position: relative;
+    margin: 0px;
+}
+
+#logo{
+    position: absolute;
+    left: 100px;
+    align-content: left;
+}
+
+.navopt{
+    background-color: #0802A3;
+    border: 10px;
+    border-radius: 25%;
+    padding: 7px, 15px;
+    color: White;
+    align-items: right;
+    padding: 10px 10px 10px 10px;
+    margin-left: 35px;
+    margin-right: 18px;
+    text-decoration: none;
+}
+
+.navopt::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #f1f1f1;
+    transition: width .3s;
+  }
+
+.navopt:hover::after {
+    width: 100%;
+  }
+
+
+
+/*          What We Do          */
+
+
+.div1{
+    position: absolute;
+    margin: 0px;
+    padding-top: 0px;
+    background-color: #EFEFEF;
+    height: 820px;
+    width: 100%;
+}
+
+
+.milestone{ 
+    text-align: center;
+    margin-top: 0px;
+}
+
+.centeredtext1{
+    position: relative;
+    top: 30px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+
+.centeredtext2{
+    position: relative;
+    top: 8px;
+    font-family: sans-serif;
+    font-size: 45px;
+}
+
+.centerbelowtext{
+    position: relative;
+    top: 20px;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+/*          Table           */
+
+.overviewtable{
+    position: relative;
+    top: 30px;
+    height: 420px;
+    width: 66px;
+}
+
+.tabimg{
+    height: 210px;
+    width: 330px;
+}
+
+.tabimg{
+    transition: transform 0.3s ease;
+}
+
+
+/*          Get In Touch            */
+
+#contact{
+    background-image: url("./indexlogoimages/IMG_20231013_170524.jpg");
+    background-repeat: no-repeat;
+   
+    position:absolute;
+    top: 900px;
+    height:780px;
+    width: 1510px;
+    background-size: cover;
+}
+
+.contactheading{
+    color: white;
+    position: absolute;
+    font-size: 45px;
+    top: 75px;
+    left: 270px;
+}
+
+#name{
+    position: absolute;
+    top: 250px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    left: 230px;
+    width: 330px;
+    height: 20px;
+}
+
+#email{
+    position: absolute;
+    top: 320px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    left: 230px;
+    width: 330px;
+    height: 20px;
+}
+
+#phoneno{
+    position: absolute;
+    top: 400px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    left: 230px;
+    width: 330px;
+    height: 20px;
+}
+
+#message{
+    position: absolute;
+    top: 480px;
+    padding: 8px 12px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    left: 230px;
+    width: 330px;
+    height: 50px;
+}
+
+form>button{
+    height:40px;
+    width: 140px;
+    position: absolute;
+    top: 600px;
+    left: 340px;
+    font-size: 25px;
+    border-radius: 10%;
+}
+
+
+/*          Footer          */
+
+.footer{
+    background-color: #EFEFEF;
+    position: relative;
+    top: 1580px;
+    height: 200px;
+    width: 100%;    
+}
+
+#rights{
+    position: absolute;
+    top: 1950px;
+    left: 525px;
+    font-size: 25px;
+}
+
+#facebook{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 70px;
+    left: 900px;
+}
+
+#linkedin{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 70px;
+    left: 980px;
+}
+
+#twitter{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 70px;
+    left: 1060px;
+}   
+
+#instagram{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 70px;
+    left: 1140px;
+}
+
+.opt1{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 125px;
+    left: 430px;
+}
+
+.opt2{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 88px;
+    left: 351px;
+}
+
+
+.opt3{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 51px;
+    left: 292px;
+}
+
+
+.opt4{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+    left: 210px;
+}
+
+
+.opt5{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: -22px;
+    left: 136px;
+}

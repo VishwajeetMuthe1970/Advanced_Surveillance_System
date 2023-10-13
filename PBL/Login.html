@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        .fm {
+            margin: 100px 400px;
+        }
+
+        #input {
+            background-color: darksalmon;
+            height: 400px;
+            width: 500px;
+        }
+
+        #un {
+            height: 40px;
+            width: 200px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        #pw {
+            height: 40px;
+            width: 200px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        #btn {
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: cornflowerblue;
+        }
+
+        #btn:hover {
+            background-color: rgb(70, 124, 223);
+            cursor: pointer;
+        }
+
+        #btn-g {
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: darkorange;
+        }
+
+        #btn-g:hover {
+            background-color: rgb(244, 202, 150);
+            cursor: pointer;
+        }
+
+        #btn-f {
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: rgb(99, 247, 99);
+        }
+
+        #btn-f:hover {
+            background-color: rgb(172, 244, 172);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form align="center" class="fm">
+        <div id="input">
+
+            <h1>Login</h1> <br>
+            <input type="text" placeholder="Username/Phone number" id="un">
+            <br><br>
+
+            <input type="text" placeholder="Password" id="pw">
+            <br><br>
+
+            <button id="btn">Login</button>
+            <h3>Or</h3>
+
+            <button id="btn-g">Google</button><br><br>
+            <button id="btn-f">Facebook</button>
+
+        </div>
+    </form>
+</body>
+</html>
