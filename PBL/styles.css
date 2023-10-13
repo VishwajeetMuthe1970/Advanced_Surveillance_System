@@ -34,6 +34,7 @@ body{
     margin-left: 35px;
     margin-right: 18px;
     text-decoration: none;
+    font-family: Georgia, serif;
 }
 
 .navopt::after {
@@ -114,7 +115,6 @@ body{
 #contact{
     background-image: url("./indexlogoimages/IMG_20231013_170524.jpg");
     background-repeat: no-repeat;
-   
     position:absolute;
     top: 900px;
     height:780px;
@@ -123,6 +123,7 @@ body{
 }
 
 .contactheading{
+    font-family: Georgia, serif;
     color: white;
     position: absolute;
     font-size: 45px;
@@ -182,6 +183,7 @@ form>button{
     left: 340px;
     font-size: 25px;
     border-radius: 10%;
+    font-family: Georgia, serif;
 }
 
 
@@ -235,44 +237,43 @@ form>button{
 }
 
 .opt1{
-    text-decoration: none;
-    font-size: 20px;
     position: relative;
     bottom: 125px;
     left: 430px;
 }
 
 .opt2{
-    text-decoration: none;
-    font-size: 20px;
     position: relative;
     bottom: 88px;
-    left: 351px;
+    left: 352px;
 }
 
 
 .opt3{
-    text-decoration: none;
-    font-size: 20px;
     position: relative;
     bottom: 51px;
-    left: 292px;
+    left: 294px;
 }
 
 
 .opt4{
-    text-decoration: none;
-    font-size: 20px;
     position: relative;
     bottom: 15px;
-    left: 210px;
+    left: 216px;
 }
 
 
 .opt5{
-    text-decoration: none;
-    font-size: 20px;
     position: relative;
     bottom: -22px;
-    left: 136px;
+    left: 144px;
 }
+
+.opts{
+    color: Black;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+}
+
+

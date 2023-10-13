@@ -16,3 +16,4 @@ enlargeImages.forEach(image => {
     image.addEventListener('mouseover', handleImageHover);
     image.addEventListener('mouseout', handleImageMouseOut);
 });
+
