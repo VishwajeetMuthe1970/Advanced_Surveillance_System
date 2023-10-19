@@ -12,9 +12,5 @@ var textElements = document.querySelectorAll('.centerbelowtext');
                 span.className = 'hidden';
                 element.appendChild(span);
                 span.style.animation = `appear 0.1s forwards ${i * 0.1}s`;
-                if(i == text.length)
-                {
-                    i=0;
-                }
             }
         });
