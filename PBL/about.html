@@ -7,10 +7,95 @@
     <title>About</title>
 
     <style>
+        body {
+            background-image: url("./aboutimages/e39487cb0da44ea3347d825de08a5856.jpeg");
+            background-blend-mode: soft-light;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Roboto Serif', serif;
+            margin: 0px; 
+            padding: 0px;
+        }
+        /*          Navbar          */
+        #nav{
+            justify-content: right;
+            background-color: rgba(30, 40, 78, 0.5);
+            display: flex;
+            padding: 25px;
+            position: relative;
+            margin: 0px;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+
+        #logo{
+            position: absolute;
+            left: 200px;
+            align-content: left;
+        }
+
+        .navopt{
+            border: 10px;
+            border-radius: 25%;
+            padding: 7px, 15px;
+            color: White;
+            align-items: right;
+            padding: 10px 10px 10px 10px;
+            margin-left: 35px;
+            margin-right: 18px;
+            text-decoration: none;
+            font-family: Georgia, serif;
+        }
+
+        .navopt::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: #f1f1f1;
+            transition: width .3s;
+        }
+
+        .navopt:hover::after {
+            width: 100%;
+        }
+        
+        
+        /*        Our Ambition         */
+
+        .ourambition{
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 50px;
+            margin-left: 40%;
+        }
+        
     </style>
 
 </head>
 <body>
-    <h1 class="about">About</h1>    
+    <!-- Navigation Bar -->
+    <header class="container">
+        <nav id="nav">
+            <img id="logo" src="" width="50" height="50" alt="Website Logo">
+            <a href="./index.html" class="navopt">Home</a>
+            <a href="./our service/service.html" class="navopt">Service</a>
+            <a href="#contact" class="navopt">Contact</a>
+            <a href="./about.html" class="navopt">About</a>
+            <a href="./register.html" class="navopt">Register</a>
+        </nav>
+    </header>
+
+    <div>
+        <h1 class="ourambition">Our Ambition</h1>
+        <p>Normally at public places we are continuously being observed under CCTV Surveillance system 
+            setup by the organizers of the particular places
+        </p>
+
+
+        <img src="" alt="pic">
+    </div>
+
 </body>
-</html> 
+</html>
