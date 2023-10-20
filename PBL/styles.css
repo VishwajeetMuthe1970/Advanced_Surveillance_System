@@ -1,7 +1,5 @@
 body {
     background-image: url("./homeimages/backgroundhome.jpeg");
-    
-    background-blend-mode: soft-light;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +26,6 @@ body {
     position: absolute;
     left: 200px;
     align-content: left;
-    border-radius: 50%;
 }
 
 .navopt{
@@ -110,6 +107,7 @@ body {
     margin-right: 30%;
     font-family: monospace;
     font-size: 25px;
+    line-height: 170%;
     color: #FFB000;
 }
 
