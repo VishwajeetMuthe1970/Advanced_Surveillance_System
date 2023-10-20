@@ -1,3 +1,10 @@
+body{
+    background-image: url(./serviceimages/service.background.avif);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .bgi{
     background-image: url(./serviceimages/main.png);
 
@@ -9,7 +16,10 @@
 }
 
 #serv{
-    background-color:rgb(204, 223, 242);
+    background-image: url(./serviceimages/background\ wallpaper.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:azure;
     height: 150px;
     border-radius: 10px;
     justify-content: center;
@@ -17,18 +27,24 @@
     font-size: larger;
     margin-top: 450px;
     text-decoration-line: overline;  
+    transition: transform .1s; 
+}
+#serv:hover{
+    transform: scale(1.1);
+    position:sticky;
+  
 }
 
 .lv{
     display: flex;
-    color: darkblue;
+    color: rgb(246, 246, 253);
 
 }
 
 #lvt{
     
     margin-left: 40px;
-    color: darkblue ;
+    color: rgb(234, 234, 240) ;
     font-size: large;
    margin: 0px 40px;
 }
@@ -40,8 +56,8 @@
     font-weight: 500px;
     border-radius: 10px;
     cursor: pointer;
-    color: rgb(224, 225, 226);
-    background-color:rgb(79, 79, 245);
+    color: rgb(20, 21, 22);
+    background-color:rgb(235, 235, 237);
     text-decoration: underline;
     margin-left: 170px;
     margin-bottom: 50px;
@@ -54,8 +70,8 @@
     font-weight: 500px;
     border-radius: 10px;
     cursor: pointer;
-    color: rgb(224, 225, 226);
-    background-color:rgb(79, 79, 245);
+    color: rgb(7, 8, 8);
+    background-color:rgb(227, 227, 238);
     text-decoration: underline;
     margin-left: 870px;
     margin-bottom: 50px;
