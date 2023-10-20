@@ -26,6 +26,7 @@ body {
     position: absolute;
     left: 200px;
     align-content: left;
+    border-radius: 50%;
 }
 
 .navopt{
