@@ -4,16 +4,59 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-size: large;
+    font: cursive;
+    color: #f1f1f1;
 }
-.bgi{
-    background-image: url(./serviceimages/main.png);
 
-    height: 500px;
-    width: 1200px;
-    margin-left: 30px;
-    margin-right: 80px;
-    position: absolute;
+
+/*          Navbar          */
+
+#nav{
+    justify-content: right;
+    background-color: rgba(30, 40, 78, 0.5);
+    display: flex;
+    padding: 25px;
+    position: relative;
+    margin: 0px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
+
+#logo{
+    position: absolute;
+    left: 200px;
+    align-content: left;
+    border-radius: 20%;
+}
+
+.navopt{
+    border: 10px;
+    border-radius: 25%;
+    padding: 7px, 15px;
+    color: White;
+    align-items: right;
+    padding: 10px 10px 10px 10px;
+    margin-left: 35px;
+    margin-right: 18px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+}
+
+.navopt::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #f1f1f1;
+    transition: width .3s;
+}
+
+.navopt:hover::after {
+    width: 100%;
+}
+
+/* our service container */
 
 #serv{
     background-image: url(./serviceimages/background\ wallpaper.avif);
@@ -23,9 +66,9 @@ body{
     height: 150px;
     border-radius: 10px;
     justify-content: center;
-    margin: 40px 30px 90px 90px;
+    margin: 80px 50px 50px 50px;
     font-size: larger;
-    margin-top: 450px;
+    margin-top: 50px;
     text-decoration-line: overline;  
     transition: transform .1s; 
 }
@@ -34,6 +77,8 @@ body{
     position:sticky;
   
 }
+
+/* live video,events,user setting,video recoder container */
 
 .lv{
     display: flex;
@@ -47,8 +92,10 @@ body{
     color: rgb(234, 234, 240) ;
     font-size: large;
    margin: 0px 40px;
+
 }
 
+/* 4 buttons container */
 #btn1{
     height: 50px;
     width: 120px;
@@ -74,5 +121,28 @@ body{
     background-color:rgb(227, 227, 238);
     text-decoration: underline;
     margin-left: 870px;
-    margin-bottom: 50px;
+   margin-bottom: 50px;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgba(30, 40, 78, 0.5);
+    position: relative;
+    top: 750px;
+    height: 100px;
+    width: 100%;    
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+    
+
+}
+
+#copyrights{
+    position: relative;
+    top: 35px;
+    margin-left: 35%;
+    font-size: 25px;
+    color: white;
+    
 }
