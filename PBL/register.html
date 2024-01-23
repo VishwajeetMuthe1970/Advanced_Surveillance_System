@@ -21,12 +21,14 @@
             /*         Home and Contact Button         */
 
             .home{
-                margin: 3%;
+                position: relative;
+                margin: 50px;
+                margin-left: 10%;
             }
 
             .home>button{
                 height: 40px;
-                width: 10%;
+                width: 140px;
                 font-size: 15px;
                 border-radius: 20px;
                 background: rgba(100, 100, 130, 0.8);
@@ -38,8 +40,9 @@
             }
 
             .contact{
-                margin-left: 88%;
-                margin-top: -5.6%;
+                position: relative;
+                margin-top: -88px;
+                margin-left: 81%;
             }
 
             .contact>button{
@@ -54,7 +57,92 @@
                 color: white;
                 text-decoration: none;
             }
+            
+            /*          Tablet          */
 
+            @media (max-width: 800px)
+            {
+                .home{
+                position: relative;
+                margin: 50px;
+                margin-left: 10%;
+            }
+
+            .home>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .home > button > a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .contact{
+                position: relative;
+                margin-top: -88px;
+                margin-left: 70%;
+            }
+
+            .contact>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .contact > button > a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+         
+        /*          Mobile            */
+
+            @media (max-width: 500px)
+            {
+                .home{
+                position: relative;
+                margin: 50px;
+                margin-left: 6%;
+            }
+
+            .home>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .home > button > a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .contact{
+                position: relative;
+                margin-top: -88px;
+                margin-left: 58%;
+            }
+
+            .contact>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .contact > button > a{
+                color: white;
+                text-decoration: none;
+            }
+        }
             /*      Input Box       */
 
             .center{
@@ -192,31 +280,31 @@
             <form method="post">
                 
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                     <label>Name</label>
                 </div>
                 
                 <div class="txt_field">
-                    <input type="text" minlength="10" maxlength="10" required>
+                    <input type="text" minlength="10" name="phoneno" maxlength="10" required>
                     <label>Phone Number</label>
                 </div>
 
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="email" required>
                     <label>Email</label>
                 </div>
                 
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
 
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="orgname" required>
                     <label>Organization Name</label>
                 </div>
                 
-                <input type="submit" id="submit" value="Register">
+                <input type="submit" id="submit" name="submit" value="Register">
                 
                 <div class="signup_link" style="font-size: 20px; padding: 15px; ">
                     Already have account? <a href="./Login.html" style="text-decoration: underline;">  Login</a>

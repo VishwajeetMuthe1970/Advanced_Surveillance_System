@@ -17,13 +17,16 @@
                 padding: 0px;
             }
 
+            
             .home{
-                margin: 3%;
+                position: relative;
+                margin: 50px;
+                margin-left: 10%;
             }
 
             .home>button{
                 height: 40px;
-                width: 10%;
+                width: 140px;
                 font-size: 15px;
                 border-radius: 20px;
                 background: rgba(100, 100, 130, 0.8);
@@ -35,8 +38,9 @@
             }
 
             .contact{
-                margin-left: 88%;
-                margin-top: -5.6%;
+                position: relative;
+                margin-top: -88px;
+                margin-left: 81%;
             }
 
             .contact>button{
@@ -51,6 +55,92 @@
                 color: white;
                 text-decoration: none;
             }
+            
+            /*          Tablet          */
+
+            @media (max-width: 800px)
+            {
+                .home{
+                position: relative;
+                margin: 50px;
+                margin-left: 10%;
+            }
+
+            .home>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .home > button > a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .contact{
+                position: relative;
+                margin-top: -88px;
+                margin-left: 70%;
+            }
+
+            .contact>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .contact > button > a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+         
+        /*          Mobile            */
+
+            @media (max-width: 500px)
+            {
+                .home{
+                position: relative;
+                margin: 50px;
+                margin-left: 6%;
+            }
+
+            .home>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .home > button > a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .contact{
+                position: relative;
+                margin-top: -88px;
+                margin-left: 58%;
+            }
+
+            .contact>button{
+                height: 40px;
+                width: 140px;
+                font-size: 15px;
+                border-radius: 20px;
+                background: rgba(100, 100, 130, 0.8);
+            }
+
+            .contact > button > a{
+                color: white;
+                text-decoration: none;
+            }
+        }
 
             .center{
                 position: absolute;
@@ -61,6 +151,7 @@
                 background: rgba(100, 100, 130, 0.8);
                 border-radius: 10px;
             }
+
 
             .center h1{
                 text-align: center;
@@ -173,31 +264,31 @@
     </head>
 
     <body>
-        
-        <div class="home">
-            <button><a href="./index.html">Home</a></button>
-        </div>
+        <div class="heading">
+            <div class="home">
+                <button><a href="./index.html">Home</a></button>
+            </div>
 
-        <div class="contact">
-            <button><a href="./contact.html">Contact US</a></button>
+            <div class="contact">
+                <button><a href="./contact.html">Contact US</a></button>
+            </div>
         </div>
-
         <div class="center">
             <h1>Login</h1>
             <form method="post">
                 
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="email" required>
                     <label>Email</label>
                 </div>
                 
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
                 
                 
-                <input type="submit" id="submit" value="Login">
+                <input type="submit" id="submit" name="submit" value="Login">
                 
                 <div class="signup_link" style="font-size: 20px; padding: 15px; ">
                     If not a member? <a href="./register.html" style="text-decoration: underline;">  Register</a>
