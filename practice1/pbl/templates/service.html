@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services Section with HTML and CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="servicestyles.css">
+<body>
+     <!-- Navigation Bar -->   
+     
+     <header class="container">
+        <nav id="nav">
+            <a href="/static/index.html"><img id="logo" src="/static/images/company-logo.jpg" width="50" height="50" alt="Website Logo"></a>
+            <div class="mobile-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-items" type="none">
+                <li><a href="/index/" class="navopt">Home</a></li>
+                <li><a href="/service/" class="navopt">Service</a></li>
+                <li><a href="/contact/" class="navopt">Contact</a></li>
+                <li><a href="/about/" class="navopt">About</a></li>
+                <li>
+                    <form class="" role="search">
+                    <!--Code for admin panel-->
+                    {% if request.user.is_authenticated %}
+                    <li>
+                        <a href="/logout/" class="navopt" type="submit">Logout</a>
+                    </li>
+                    {% else %}
+                    <a href="/Login/" class="navopt" type="submit">Login</a>
+                    {% endif %}
+                    </form>
+                </li>
+
+                <li><form class="" role="search">
+                    <!--Code for admin panel-->
+                    {% if request.user.is_authenticated %}
+                    <li class="user-info">
+                        <a class="user-info-text" style="color: white; white-space: nowrap;">Hi {{user.first_name}}!!</a>
+                    </li>
+                    {% else %}
+                    <li></li>
+                    {% endif %}</li>
+            </ul>
+        </nav>
+    </header>
+  
+    <!-- Features -->
+    <div class="container">
+        <h1 class="container__heading">Our Sevices</h1>
+       <h5>✌️CCTV Services can provide you with a complete CCTV security package.✌️ <br><br>
+        <p>👉 With Video Surveillance, we can remotely view, verify, interact,   and control your CCTV cameras. This is critically important in emergency situations when seconds can mean the difference between life and death.👈</p>
+       </h5>
+        <div class="container__box">
+           <!-- LIVE VIDEO -->
+            <div class="box">
+                <img src="service-live.jpg" alt="">
+                <h3>Live Video:</h3>
+                <p>Live video enhances security, safety, evidence, behavior, and remote access</p>
+                <a href="" class="btn">Live Video</a>
+            </div>
+           <!-- VIDEO CLIPS -->
+            <div class="box">
+                <img src="service-video.png" alt="">
+                <h3>Videos:</h3>
+                <p>Video clips provide evidence, records, feedback, and analysis</p>
+                <a href="" class="btn">Video clips</a>
+            </div>
+            <!-- PHOTOS -->
+            <div class="box">
+                <img src="service-photo.jpg" alt="">
+                <h3>Photos:</h3>
+                <p>Photos provide evidence, records, feedback, and analysis</p>
+                <a href="" class="btn">Photos</a>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-columns">
+            <div class="footer-column1">
+                <h3>Viksit <br>Bharat</h3>
+                <p>Email: <a href="mailto:#">nothing@gmail.com</a> </p>
+                <p>Phone: <a href="tel:#">+91 2568456239</a> </p>
+            </div>
+            <div class="footer-column2">
+                <ul class="foot-list"> 
+                    <li><a href="/index/">Home</a></li>
+                    <li><a href="/service/">Services</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column3">
+                <img src="/static/images/company-logo.jpg" alt="Company Logo" style="width: 70px; height: 70px;">
+                <p>Anomaly Detection Using Computer Vision</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
