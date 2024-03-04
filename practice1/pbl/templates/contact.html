@@ -531,7 +531,7 @@ footer {
                     </form>
                 </li>
 
-                <li><form class="" role="search">
+                {% comment %} <li><form class="" role="search">
                     <!--Code for admin panel-->
                     {% if request.user.is_authenticated %}
                     <li class="user-info">
@@ -539,7 +539,7 @@ footer {
                     </li>
                     {% else %}
                     <li></li>
-                    {% endif %}</li>
+                    {% endif %}</li> {% endcomment %}
             </ul>
         </nav>
     </header>
