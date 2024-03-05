@@ -134,7 +134,11 @@
                         </a>
                         <div class="dropdown-content">
                             <a href="/logout/" class="navopt logout">Logout</a>
-                            <a href="delete_account/" class="navopt dlt-acc">Delete My Account</a>
+                            <hr>
+                            <!-- <a href="delete_account/" class="navopt dlt-acc">Delete My Account</a> -->
+                            <!-- templates/delete_user.html -->
+                            <a href="/delete-user/{{user.id}}/"><button class=" btn btn-danger m-2">Delete</button></a>
+
                         </div>
                     {% else %}
                         <a href="/Login/" class="navopt">Login</a>

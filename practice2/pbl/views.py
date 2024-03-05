@@ -13,6 +13,7 @@ from django.core.exceptions import ValidationError
 from django.db.utils import IntegrityError
 from django.conf import settings
 from django.contrib.auth import get_user_model
+from django.shortcuts import get_object_or_404
 
 User = get_user_model()
 # Create your views here.
@@ -62,6 +63,19 @@ def user_login(request):
 
     return render(request, 'Login.html')
 
+
+def delete_user(request, user_id):
+    user_instance = get_object_or_404(User, id=user_id)
+    
+    # Save the username before deleting for the success message
+    username = user_instance.username
+
+    user_instance.delete()
+
+    # Add a success message
+    messages.success(request, f"User '{username}' deleted successfully!")
+
+    return redirect('Login')
 
 
 def user_logout(request):

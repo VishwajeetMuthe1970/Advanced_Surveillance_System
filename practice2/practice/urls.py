@@ -40,6 +40,8 @@ urlpatterns = [
 
     path('register/' ,register ,name="register"),
 
+    path('delete-user/<int:user_id>/', delete_user, name='delete_user'),
+
     path('logout/', user_logout , name="logout_page"),
 ]
 
