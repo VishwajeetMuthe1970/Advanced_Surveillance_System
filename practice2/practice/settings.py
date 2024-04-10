@@ -98,7 +98,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'CCTV',
         'CLIENT': {
-            'host': 'mongodb+srv://Rudra:Romil@cluster0.8090d03.mongodb.net/CCTV?retryWrites=true&w=majority&appName=Cluster0',
+            'host': 'mongodb+srv://Rudra:Romil@cluster1.v5qi3pi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1',
             'username': 'Rudra',
             'password': 'Romil'
         }
